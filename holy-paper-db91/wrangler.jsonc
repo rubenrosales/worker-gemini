@@ -1,0 +1,20 @@
+{
+	"name": "video_gemini",
+	"main": "src/index.js",
+	"compatibility_date": "2025-01-01",
+	"observability": {
+		"enabled": true,
+	},
+		"r2_buckets": [
+		  {
+			"binding": "MY_BUCKET",
+			"bucket_name": "gemini-videos"
+		  }
+		],
+		"kv_namespaces": [
+			{
+			  "binding": "video_storage_kv",
+			  "id": "c298be6c3d1e451f97ee385df9cfe23a"
+			}
+		  ]
+}
